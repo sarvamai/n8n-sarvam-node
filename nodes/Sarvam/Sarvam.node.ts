@@ -292,6 +292,7 @@ export class Sarvam implements INodeType {
 				default: 'sarvam-105b',
 				options: [
 					{ name: 'Sarvam 105B', value: 'sarvam-105b' },
+					{ name: 'Sarvam 105B Conversations', value: 'sarvam-105b-conversations' },
 				],
 				displayOptions: { show: { resource: ['chat'], operation: ['complete'] } },
 			},
