@@ -533,7 +533,7 @@ function formatApiError(error: unknown): string {
 		return 'Invalid or expired API key. Check your Sarvam AI credential.';
 	}
 	if (status === 402 || apiMessage.includes('insufficient_quota')) {
-		return 'Insufficient API credits. Top up at dashboard.sarvam.ai.';
+		return 'Insufficient API credits. Top up at indus.sarvam.ai.';
 	}
 	if (status === 422) {
 		return `Invalid request: ${apiMessage}`;
