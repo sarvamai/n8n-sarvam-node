@@ -118,8 +118,10 @@ jobs:
               npm_*) echo "Token prefix: npm_ (granular-style)";;
               *) echo "::warning::NPM_TOKEN should be a granular token from npmjs.com (usually starts with npm_). Classic tokens are deprecated.";;
             esac
-            # Prefer env auth only; project .npmrc + env can confuse some npm versions.
+            # setup-node has no registry-url here, so no .npmrc reads NODE_AUTH_TOKEN and
+            # npm sees no credentials (ENEEDAUTH). Write the token into npm's user config.
             export NODE_AUTH_TOKEN="$NPM_TOKEN"
+            npm config set "//registry.npmjs.org/:_authToken=${NPM_TOKEN}"
             echo "npm whoami:"
             npm whoami --registry=https://registry.npmjs.org/
             npm publish --access public --registry=https://registry.npmjs.org/
