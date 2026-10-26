@@ -29,7 +29,7 @@ In n8n, create a new **Sarvam AI API** credential and paste your API key.
 | Operation | Description |
 |---|---|
 | **Speech to Text** | Transcribe audio files with multiple modes — transcribe, translate to English, transliterate (roman), code-mixed, and verbatim. Uses Saaras V4 by default (adds key term prompting); Saaras V3 is selectable |
-| **Text to Speech** | Convert text to natural-sounding speech with Bulbul V4 Flash (default, 224 persona voices) or Bulbul V3 (37 voices, ends Nov 10, 2026) |
+| **Text to Speech** | Convert text to natural-sounding speech with Bulbul V4 Flash (default, 222 persona voices) or Bulbul V3 (37 voices, ends Nov 10, 2026) |
 
 ### Chat
 
