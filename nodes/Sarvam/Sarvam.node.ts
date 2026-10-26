@@ -629,7 +629,8 @@ export class Sarvam implements INodeType {
 							{ name: 'Disabled', value: 'none', description: 'Turn thinking off' },
 							{ name: 'High', value: 'high' },
 							{ name: 'Low', value: 'low' },
-							],
+							{ name: 'Medium', value: 'medium' },
+						],
 					},
 					{
 						displayName: 'Seed',
