@@ -404,6 +404,7 @@ export class Sarvam implements INodeType {
 				displayName: 'Model',
 				name: 'sttModel',
 				type: 'options',
+				required: true,
 				default: 'saaras:v4',
 				options: [
 					{ name: 'Saaras V4', value: 'saaras:v4', description: 'Latest and recommended; supports key terms' },
@@ -460,6 +461,7 @@ export class Sarvam implements INodeType {
 				displayName: 'Model',
 				name: 'ttsModel',
 				type: 'options',
+				required: true,
 				default: 'bulbul:v4-flash',
 				options: [
 					{ name: 'Bulbul V4 Flash', value: 'bulbul:v4-flash', description: 'Latest model with 200+ persona voices' },
@@ -471,6 +473,7 @@ export class Sarvam implements INodeType {
 				displayName: 'Speaker',
 				name: 'ttsSpeakerV3',
 				type: 'options',
+				required: true,
 				default: 'shubh',
 				options: TTS_SPEAKERS,
 				displayOptions: { show: { resource: ['speech'], operation: ['textToSpeech'], ttsModel: ['bulbul:v3'] } },
@@ -480,6 +483,7 @@ export class Sarvam implements INodeType {
 				displayName: 'Speaker',
 				name: 'ttsSpeakerV4',
 				type: 'options',
+				required: true,
 				default: 'shubh_enhi_ads',
 				options: TTS_SPEAKERS_V4,
 				displayOptions: { show: { resource: ['speech'], operation: ['textToSpeech'], ttsModel: ['bulbul:v4-flash'] } },
