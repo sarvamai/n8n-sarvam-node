@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/vinayak-sarvam/n8n-sarvam-node.git"
+		"url": "git+https://github.com/sarvamai/n8n-sarvam-node.git"
 	},
 	"publishConfig": {
 		"access": "public",
@@ -29,7 +29,6 @@
 		"lint": "n8n-node lint",
 		"lint:fix": "n8n-node lint --fix",
 		"prepublishOnly": "n8n-node prerelease",
-		"publish:cli": "npm run lint && npm run build && RELEASE_MODE=true npm publish --access public --provenance=false",
 		"release": "n8n-node release"
 	},
 	"files": [
